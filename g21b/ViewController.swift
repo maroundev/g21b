@@ -45,7 +45,7 @@ class ViewController: UIViewController, GADBannerViewDelegate, EasyGameCenterDel
         EasyGameCenter.delegate = self
         countLabel.text = "\(count.loadTheCount())"
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateCountLabel:", name:COUNT_NOTIF_UPDATE, object: nil)
-        //createAdd()
+        createAdd()
     }
     
     override func viewDidDisappear(animated: Bool) {

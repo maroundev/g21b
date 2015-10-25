@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		140D45D41BD60CE8001FDAB0 /* gamecenter_img.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = gamecenter_img.ico; sourceTree = "<group>"; };
 		140D45D61BD60E58001FDAB0 /* settings_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_img.png; sourceTree = "<group>"; };
-		1441A65C1B9EA343008845AF /* G21B.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G21B.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1441A65C1B9EA343008845AF /* G21B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G21B.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1441A6601B9EA343008845AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/Maroun/Repository/Xcode/g21b/g21b/Info.plist; sourceTree = "<absolute>"; };
 		1441A6611B9EA343008845AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1441A6631B9EA343008845AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		1441A65D1B9EA343008845AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1441A65C1B9EA343008845AF /* G21B.temp_caseinsensitive_rename.app */,
+				1441A65C1B9EA343008845AF /* G21B.app */,
 				1441A6711B9EA343008845AF /* G21B.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
@@ -253,7 +253,7 @@
 			);
 			name = g21b;
 			productName = g21b;
-			productReference = 1441A65C1B9EA343008845AF /* G21B.temp_caseinsensitive_rename.app */;
+			productReference = 1441A65C1B9EA343008845AF /* G21B.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1441A6701B9EA343008845AF /* g21bTests */ = {
@@ -541,8 +541,8 @@
 				INFOPLIST_FILE = g21b/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = G21B.temp_caseinsensitive_rename;
+				PRODUCT_BUNDLE_IDENTIFIER = mar.g21b;
+				PRODUCT_NAME = G21B;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/GoogleMobile-Ads-SDK/**";
@@ -573,8 +573,8 @@
 				INFOPLIST_FILE = g21b/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = G21B.temp_caseinsensitive_rename;
+				PRODUCT_BUNDLE_IDENTIFIER = mar.g21b;
+				PRODUCT_NAME = G21B;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/GoogleMobile-Ads-SDK/**";
