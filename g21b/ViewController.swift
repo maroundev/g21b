@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GoogleMobileAds
+//import GoogleMobileAds
 
 class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCenterDelegate {
     var count = G21BCount.sharedInstance
