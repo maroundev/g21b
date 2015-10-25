@@ -10,20 +10,32 @@
 		140D45D51BD60CE8001FDAB0 /* gamecenter_img.ico in Resources */ = {isa = PBXBuildFile; fileRef = 140D45D41BD60CE8001FDAB0 /* gamecenter_img.ico */; };
 		140D45D71BD60E58001FDAB0 /* settings_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 140D45D61BD60E58001FDAB0 /* settings_img.png */; };
 		1441A6621B9EA343008845AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6611B9EA343008845AF /* AppDelegate.swift */; };
-		1441A6641B9EA343008845AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6631B9EA343008845AF /* ViewController.swift */; };
 		1441A6671B9EA343008845AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6651B9EA343008845AF /* Main.storyboard */; };
 		1441A6691B9EA343008845AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6681B9EA343008845AF /* Images.xcassets */; };
 		1441A6781B9EA343008845AF /* g21bTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6771B9EA343008845AF /* g21bTests.swift */; };
 		1441A6841B9EAE7F008845AF /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6831B9EAE7F008845AF /* IBDesignable.swift */; };
+		148295A51BDC8DD800DD0CED /* LocalNotificationSchedular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148295A41BDC8DD800DD0CED /* LocalNotificationSchedular.swift */; };
 		1494DB951B9EBEAB00C16B63 /* G21BCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494DB941B9EBEAB00C16B63 /* G21BCount.swift */; };
 		14ADB5171BD7441000E56A8D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB5161BD7441000E56A8D /* Utilities.swift */; };
+		14C264F31BDC71900075383E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6631B9EA343008845AF /* ViewController.swift */; };
+		14C264F51BDC74F80075383E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C264F41BDC74F80075383E /* AdSupport.framework */; };
+		14C264F71BDC75030075383E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C264F61BDC75030075383E /* AudioToolbox.framework */; };
+		14C264F91BDC750C0075383E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C264F81BDC750C0075383E /* AVFoundation.framework */; };
+		14C264FB1BDC75160075383E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C264FA1BDC75160075383E /* CoreGraphics.framework */; };
+		14C264FD1BDC75200075383E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C264FC1BDC75200075383E /* CoreMedia.framework */; };
+		14C264FF1BDC752A0075383E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C264FE1BDC752A0075383E /* CoreTelephony.framework */; };
+		14C265021BDC75370075383E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C265001BDC75370075383E /* EventKit.framework */; };
+		14C265031BDC75370075383E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C265011BDC75370075383E /* EventKitUI.framework */; };
+		14C265051BDC753E0075383E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C265041BDC753E0075383E /* MessageUI.framework */; };
+		14C265071BDC75490075383E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C265061BDC75490075383E /* StoreKit.framework */; };
 		14D591551BC79E3B009756C2 /* LaunchImages in Resources */ = {isa = PBXBuildFile; fileRef = 14D591541BC79E3B009756C2 /* LaunchImages */; };
 		14DA1D821BC78014003C9669 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DA1D811BC78014003C9669 /* GameKit.framework */; };
 		14DA1D841BC7801F003C9669 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DA1D831BC7801F003C9669 /* SystemConfiguration.framework */; };
 		14DA1D8A1BC781CF003C9669 /* EasyGameCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA1D891BC781CF003C9669 /* EasyGameCenter.swift */; };
+		14E741C61BDCC7CB0079724A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E741C51BDCC7CB0079724A /* GoogleMobileAds.framework */; };
 		14EA5E1A1BDC3DCA0048F6B5 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA5E191BDC3DCA0048F6B5 /* GlobalVariables.swift */; };
 		14ED8D791BC78CD3009AB04C /* app_icons in Resources */ = {isa = PBXBuildFile; fileRef = 14ED8D781BC78CD3009AB04C /* app_icons */; };
-		8C505BF9380F7BFFC340ACBD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD835B3C2B0B1BB75F038097 /* libPods.a */; };
+		8C505BF9380F7BFFC340ACBD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD835B3C2B0B1BB75F038097 /* libPods.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +51,35 @@
 /* Begin PBXFileReference section */
 		140D45D41BD60CE8001FDAB0 /* gamecenter_img.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = gamecenter_img.ico; sourceTree = "<group>"; };
 		140D45D61BD60E58001FDAB0 /* settings_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_img.png; sourceTree = "<group>"; };
-		1441A65C1B9EA343008845AF /* g21b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = g21b.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1441A6601B9EA343008845AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1441A65C1B9EA343008845AF /* G21B.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G21B.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1441A6601B9EA343008845AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/Maroun/Repository/Xcode/g21b/g21b/Info.plist; sourceTree = "<absolute>"; };
 		1441A6611B9EA343008845AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1441A6631B9EA343008845AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1441A6661B9EA343008845AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1441A6681B9EA343008845AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1441A6711B9EA343008845AF /* g21bTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = g21bTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1441A6711B9EA343008845AF /* G21B.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G21B.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1441A6761B9EA343008845AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1441A6771B9EA343008845AF /* g21bTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g21bTests.swift; sourceTree = "<group>"; };
 		1441A6831B9EAE7F008845AF /* IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
+		148295A41BDC8DD800DD0CED /* LocalNotificationSchedular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationSchedular.swift; sourceTree = "<group>"; };
 		1494DB941B9EBEAB00C16B63 /* G21BCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = G21BCount.swift; sourceTree = "<group>"; };
 		14ADB5161BD7441000E56A8D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		14C264F41BDC74F80075383E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		14C264F61BDC75030075383E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		14C264F81BDC750C0075383E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		14C264FA1BDC75160075383E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14C264FC1BDC75200075383E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		14C264FE1BDC752A0075383E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		14C265001BDC75370075383E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		14C265011BDC75370075383E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		14C265041BDC753E0075383E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		14C265061BDC75490075383E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		14D591541BC79E3B009756C2 /* LaunchImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LaunchImages; sourceTree = "<group>"; };
 		14DA1D811BC78014003C9669 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		14DA1D831BC7801F003C9669 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		14DA1D891BC781CF003C9669 /* EasyGameCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyGameCenter.swift; sourceTree = "<group>"; };
+		14E741C01BDCB9A40079724A /* g21b-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "g21b-Bridging-Header.h"; sourceTree = "<group>"; };
+		14E741C51BDCC7CB0079724A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		14EA5E191BDC3DCA0048F6B5 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalVariables.swift; path = /Users/Maroun/Repository/Xcode/g21b/g21b/GlobalVariables.swift; sourceTree = "<absolute>"; };
 		14ED8D781BC78CD3009AB04C /* app_icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app_icons; sourceTree = "<group>"; };
 		6883464F95FC99209B261C5D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,8 +92,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C265071BDC75490075383E /* StoreKit.framework in Frameworks */,
+				14C265051BDC753E0075383E /* MessageUI.framework in Frameworks */,
+				14C265021BDC75370075383E /* EventKit.framework in Frameworks */,
+				14C265031BDC75370075383E /* EventKitUI.framework in Frameworks */,
+				14C264FF1BDC752A0075383E /* CoreTelephony.framework in Frameworks */,
+				14C264FD1BDC75200075383E /* CoreMedia.framework in Frameworks */,
+				14C264FB1BDC75160075383E /* CoreGraphics.framework in Frameworks */,
+				14C264F91BDC750C0075383E /* AVFoundation.framework in Frameworks */,
+				14C264F71BDC75030075383E /* AudioToolbox.framework in Frameworks */,
+				14C264F51BDC74F80075383E /* AdSupport.framework in Frameworks */,
 				14DA1D841BC7801F003C9669 /* SystemConfiguration.framework in Frameworks */,
 				14DA1D821BC78014003C9669 /* GameKit.framework in Frameworks */,
+				14E741C61BDCC7CB0079724A /* GoogleMobileAds.framework in Frameworks */,
 				8C505BF9380F7BFFC340ACBD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +142,8 @@
 		1441A65D1B9EA343008845AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1441A65C1B9EA343008845AF /* g21b.app */,
-				1441A6711B9EA343008845AF /* g21bTests.xctest */,
+				1441A65C1B9EA343008845AF /* G21B.temp_caseinsensitive_rename.app */,
+				1441A6711B9EA343008845AF /* G21B.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +155,7 @@
 				1441A6611B9EA343008845AF /* AppDelegate.swift */,
 				1441A6831B9EAE7F008845AF /* IBDesignable.swift */,
 				1441A6631B9EA343008845AF /* ViewController.swift */,
+				148295A41BDC8DD800DD0CED /* LocalNotificationSchedular.swift */,
 				14ADB5161BD7441000E56A8D /* Utilities.swift */,
 				14EA5E191BDC3DCA0048F6B5 /* GlobalVariables.swift */,
 				1494DB941B9EBEAB00C16B63 /* G21BCount.swift */,
@@ -133,7 +170,9 @@
 		1441A65F1B9EA343008845AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14E741C51BDCC7CB0079724A /* GoogleMobileAds.framework */,
 				1441A6601B9EA343008845AF /* Info.plist */,
+				14E741C01BDCB9A40079724A /* g21b-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,6 +216,16 @@
 		B082105F463850120182A8D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14C265061BDC75490075383E /* StoreKit.framework */,
+				14C265041BDC753E0075383E /* MessageUI.framework */,
+				14C265001BDC75370075383E /* EventKit.framework */,
+				14C265011BDC75370075383E /* EventKitUI.framework */,
+				14C264FE1BDC752A0075383E /* CoreTelephony.framework */,
+				14C264FC1BDC75200075383E /* CoreMedia.framework */,
+				14C264FA1BDC75160075383E /* CoreGraphics.framework */,
+				14C264F81BDC750C0075383E /* AVFoundation.framework */,
+				14C264F61BDC75030075383E /* AudioToolbox.framework */,
+				14C264F41BDC74F80075383E /* AdSupport.framework */,
 				14DA1D831BC7801F003C9669 /* SystemConfiguration.framework */,
 				14DA1D811BC78014003C9669 /* GameKit.framework */,
 				BD835B3C2B0B1BB75F038097 /* libPods.a */,
@@ -204,7 +253,7 @@
 			);
 			name = g21b;
 			productName = g21b;
-			productReference = 1441A65C1B9EA343008845AF /* g21b.app */;
+			productReference = 1441A65C1B9EA343008845AF /* G21B.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1441A6701B9EA343008845AF /* g21bTests */ = {
@@ -222,7 +271,7 @@
 			);
 			name = g21bTests;
 			productName = g21bTests;
-			productReference = 1441A6711B9EA343008845AF /* g21bTests.xctest */;
+			productReference = 1441A6711B9EA343008845AF /* G21B.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1441A6571B9EA343008845AF /* Build configuration list for PBXProject "g21b" */;
+			buildConfigurationList = 1441A6571B9EA343008845AF /* Build configuration list for PBXProject "G21B" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -341,11 +390,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1441A6641B9EA343008845AF /* ViewController.swift in Sources */,
+				148295A51BDC8DD800DD0CED /* LocalNotificationSchedular.swift in Sources */,
 				1441A6621B9EA343008845AF /* AppDelegate.swift in Sources */,
 				14ADB5171BD7441000E56A8D /* Utilities.swift in Sources */,
 				14DA1D8A1BC781CF003C9669 /* EasyGameCenter.swift in Sources */,
 				14EA5E1A1BDC3DCA0048F6B5 /* GlobalVariables.swift in Sources */,
+				14C264F31BDC71900075383E /* ViewController.swift in Sources */,
 				1441A6841B9EAE7F008845AF /* IBDesignable.swift in Sources */,
 				1494DB951B9EBEAB00C16B63 /* G21BCount.swift in Sources */,
 			);
@@ -385,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -422,6 +473,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -430,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -459,6 +512,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -467,17 +521,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC77135480E3BF89ED095F65 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1\"",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+				);
 				INFOPLIST_FILE = g21b/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				PRODUCT_NAME = G21B.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/GoogleMobile-Ads-SDK/**";
 			};
 			name = Debug;
 		};
@@ -485,24 +553,37 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6883464F95FC99209B261C5D /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1\"",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+				);
 				INFOPLIST_FILE = g21b/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				PRODUCT_NAME = G21B.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/GoogleMobile-Ads-SDK/**";
 			};
 			name = Release;
 		};
 		1441A67F1B9EA343008845AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -514,15 +595,15 @@
 				INFOPLIST_FILE = g21bTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/g21b.app/g21b";
+				PRODUCT_NAME = G21B.temp_caseinsensitive_rename;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/G21B.temp_caseinsensitive_rename.app/G21B.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
 		1441A6801B9EA343008845AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -530,15 +611,16 @@
 				INFOPLIST_FILE = g21bTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/g21b.app/g21b";
+				PRODUCT_NAME = G21B.temp_caseinsensitive_rename;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/G21B.temp_caseinsensitive_rename.app/G21B.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1441A6571B9EA343008845AF /* Build configuration list for PBXProject "g21b" */ = {
+		1441A6571B9EA343008845AF /* Build configuration list for PBXProject "G21B" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1441A6791B9EA343008845AF /* Debug */,

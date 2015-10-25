@@ -9,7 +9,7 @@
 #ifndef g21b_Bridging_Header_h
 #define g21b_Bridging_Header_h
 
-#import <GADBannerView.h>
-@import GoogleMobileAds;
+#import <GoogleMobileAds/GADBannerView.h>
+//@import GoogleMobileAds;
 
 #endif /* g21b_Bridging_Header_h */

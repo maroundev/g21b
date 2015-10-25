@@ -10,7 +10,8 @@ import UIKit
 import GameKit
 
 class G21BCount: NSObject {
-    private var count: Int64 = 0
+    private var count = Int64(0)
+    private var tracker = Int(0)
     private var defaults = NSUserDefaults.standardUserDefaults()
     
     class var sharedInstance: G21BCount{
@@ -22,7 +23,6 @@ class G21BCount: NSObject {
     
     override init(){
         super.init()
-        
     }
     
     func loadTheCount() -> Int64{
@@ -39,13 +39,23 @@ class G21BCount: NSObject {
     }
     
     func incrementCount() -> Int64{
+        tracker++
         return ++count
     }
     
     func incrementCountBy( incr: Int64){
         count += incr;
+        tracker += Int(incr)
         saveCount()
         NSNotificationCenter.defaultCenter().postNotificationName(COUNT_NOTIF_UPDATE, object: self)
+    }
+    
+    func currentCountTrack() -> Int{
+        return tracker;
+    }
+    
+    func zeroOutTracker(){
+        tracker = 0
     }
     
     func getCount() -> Int64{
@@ -142,7 +152,6 @@ extension G21BCount{
     }
     
     private func checkInitialAchievement(){
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "InitialLogin")        
         if NSUserDefaults.standardUserDefaults().boolForKey("InitialLogin") != true{
                 if reportAchievement(AchievementIds.INITIAL_LOGIN.rawValue) {
                     incrementCountBy(100)

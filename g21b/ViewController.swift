@@ -7,21 +7,21 @@
 //
 
 import UIKit
-import GoogleMobileAds
 
-class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCenterDelegate {
+class ViewController: UIViewController, GADBannerViewDelegate, EasyGameCenterDelegate {
     var count = G21BCount.sharedInstance
-    //var ad: GADBannerView!
+    var ad: GADBannerView!
     var util = Utilities()
-    
     @IBOutlet weak var infoBtn: UIButton!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var topRankLabel: UILabel!
-    
+    var label: UILabel!
+
     @IBOutlet weak var countBtn: UIButton!
     @IBAction func count(sender: AnyObject) {
-        countLabel.text = "\(count.incrementCount())"
+        self.countLabel.text = "\(self.count.incrementCount())"
+        labelAffect()
     }
 
     
@@ -37,7 +37,6 @@ class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCente
         
         infoBtn.hidden = true
         EasyGameCenter.sharedInstance(self)
-
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -46,7 +45,7 @@ class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCente
         EasyGameCenter.delegate = self
         countLabel.text = "\(count.loadTheCount())"
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateCountLabel:", name:COUNT_NOTIF_UPDATE, object: nil)
-       // createAdd()
+        //createAdd()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -54,13 +53,13 @@ class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCente
         
         count.saveCount()
         NSNotificationCenter.defaultCenter().removeObserver(self)
-        //ad.removeFromSuperview()
+        ad.removeFromSuperview()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-        //ad.removeFromSuperview()
+        ad.removeFromSuperview()
     }
 
     
@@ -70,26 +69,26 @@ class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCente
     
     /********************************************************************************************************************/
 
-//    func createAdd(){
-//        ad = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.size.width, height: 50))
-//        ad.delegate = self
-//        ad.adUnitID = "ca-app-pub-5238743433535049/2950508813"
-//        ad.rootViewController = self
-//        
-//        let req = GADRequest()
-//        ad.loadRequest(req)
-//        self.view.addSubview(ad)
-//    }
-//    
-//    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-//        ad.removeFromSuperview()
-//    }
-//    
-//    func adViewDidReceiveAd(bannerView: GADBannerView!) {
-//        UIView.animateWithDuration(NSTimeInterval(0.3), animations: { () -> Void in
-//            self.ad.frame = CGRect(x: 0, y: self.view.frame.height-50, width: self.view.frame.size.width, height: 50)
-//        })
-//    }
+    func createAdd(){
+        ad = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.size.width, height: 50))
+        ad.delegate = self
+        ad.adUnitID = "ca-app-pub-5238743433535049/2950508813"
+        ad.rootViewController = self
+        
+        let req = GADRequest()
+        ad.loadRequest(req)
+        self.view.addSubview(ad)
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        ad.removeFromSuperview()
+    }
+    
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        UIView.animateWithDuration(NSTimeInterval(0.3), animations: { () -> Void in
+            self.ad.frame = CGRect(x: 0, y: self.view.frame.height-50, width: self.view.frame.size.width, height: 50)
+        })
+    }
     
     /********************************************************************************************************************/
 
@@ -98,10 +97,8 @@ class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCente
     /********************************************************************************************************************/
 
     func easyGameCenterAuthentified() {
-        customizeGameCenterBtn()
         infoBtn.hidden = false
         print("\n[MainViewController] Player Authentified\n")
-
     }
   
     func easyGameCenterNotAuthentified() {
@@ -119,18 +116,23 @@ class ViewController: UIViewController, /*GADBannerViewDelegate,*/ EasyGameCente
     }
     
     
-    /********************************************************************************************************************/
-
-   
-    /********************************************************************************************************************/
-
-    func customizeGameCenterBtn(){
-        infoBtn.layer.cornerRadius = (infoBtn.frame.height/2)
-        infoBtn.layer.masksToBounds = true
-    }
-    
     func updateCountLabel(notification: NSNotification){
         countLabel.text = String(count.loadTheCount())
+        labelAffect()
+    }
+    
+    func labelAffect(){
+        if( label != nil ){ label.removeFromSuperview() }
+        label = UILabel(frame: CGRectMake(self.countLabel.frame.width/1.5, self.countLabel.frame.height, 100, 100))
+        label.textAlignment = NSTextAlignment.Center
+        label.textColor = UIColor.greenColor()
+        label.font = UIFont.boldSystemFontOfSize(16)
+        label.text = "+\(count.currentCountTrack())"
+        self.view.addSubview(label)
+        
+        UIView.animateWithDuration(0.6) { () -> Void in
+            self.label.alpha = 0
+        }
     }
 }
 
