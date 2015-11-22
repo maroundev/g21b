@@ -124,6 +124,11 @@ extension G21BCount{
             (tupleHighScore) -> Void in
             if let tupleIsOk = tupleHighScore {
                 label.text = "\(tupleIsOk.playerName) #\(tupleIsOk.rank)"
+                if (Int(self.count) < tupleIsOk.score){
+                    self.count = Int64(tupleIsOk.score);
+                    NSNotificationCenter.defaultCenter().postNotificationName(COUNT_NOTIF_UPDATE, object: self)
+                }
+                self.saveCount();
             }
         }
     }

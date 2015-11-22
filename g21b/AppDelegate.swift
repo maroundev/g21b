@@ -13,12 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let count = G21BCount.sharedInstance
-    let notifSchedular = LocalNotificationSchedular()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
-        application.registerUserNotificationSettings(UIUserNotificationSettings (forTypes: UIUserNotificationType.Alert, categories: nil))
-        notifSchedular.scheduleEveryWeekNotification()
         
         return true
     }

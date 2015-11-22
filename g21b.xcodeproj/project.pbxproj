@@ -14,7 +14,6 @@
 		1441A6691B9EA343008845AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6681B9EA343008845AF /* Images.xcassets */; };
 		1441A6781B9EA343008845AF /* g21bTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6771B9EA343008845AF /* g21bTests.swift */; };
 		1441A6841B9EAE7F008845AF /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6831B9EAE7F008845AF /* IBDesignable.swift */; };
-		148295A51BDC8DD800DD0CED /* LocalNotificationSchedular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148295A41BDC8DD800DD0CED /* LocalNotificationSchedular.swift */; };
 		1494DB951B9EBEAB00C16B63 /* G21BCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494DB941B9EBEAB00C16B63 /* G21BCount.swift */; };
 		14ADB5171BD7441000E56A8D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB5161BD7441000E56A8D /* Utilities.swift */; };
 		14C264F31BDC71900075383E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6631B9EA343008845AF /* ViewController.swift */; };
@@ -61,7 +60,6 @@
 		1441A6761B9EA343008845AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1441A6771B9EA343008845AF /* g21bTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = g21bTests.swift; sourceTree = "<group>"; };
 		1441A6831B9EAE7F008845AF /* IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
-		148295A41BDC8DD800DD0CED /* LocalNotificationSchedular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationSchedular.swift; sourceTree = "<group>"; };
 		1494DB941B9EBEAB00C16B63 /* G21BCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = G21BCount.swift; sourceTree = "<group>"; };
 		14ADB5161BD7441000E56A8D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		14C264F41BDC74F80075383E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -155,7 +153,6 @@
 				1441A6611B9EA343008845AF /* AppDelegate.swift */,
 				1441A6831B9EAE7F008845AF /* IBDesignable.swift */,
 				1441A6631B9EA343008845AF /* ViewController.swift */,
-				148295A41BDC8DD800DD0CED /* LocalNotificationSchedular.swift */,
 				14ADB5161BD7441000E56A8D /* Utilities.swift */,
 				14EA5E191BDC3DCA0048F6B5 /* GlobalVariables.swift */,
 				1494DB941B9EBEAB00C16B63 /* G21BCount.swift */,
@@ -390,7 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148295A51BDC8DD800DD0CED /* LocalNotificationSchedular.swift in Sources */,
 				1441A6621B9EA343008845AF /* AppDelegate.swift in Sources */,
 				14ADB5171BD7441000E56A8D /* Utilities.swift in Sources */,
 				14DA1D8A1BC781CF003C9669 /* EasyGameCenter.swift in Sources */,
@@ -533,6 +529,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -545,6 +542,7 @@
 				PRODUCT_NAME = G21B;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/GoogleMobile-Ads-SDK/**";
 			};
 			name = Debug;
@@ -565,6 +563,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -577,6 +576,7 @@
 				PRODUCT_NAME = G21B;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "g21b/g21b-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/GoogleMobile-Ads-SDK/**";
 			};
 			name = Release;

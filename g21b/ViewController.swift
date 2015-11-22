@@ -123,12 +123,12 @@ class ViewController: UIViewController, GADBannerViewDelegate, EasyGameCenterDel
     
     func labelAffect(){
         if( label != nil ){ label.removeFromSuperview() }
-        label = UILabel(frame: CGRectMake(self.countLabel.frame.width/1.5, self.countLabel.frame.height, 100, 100))
-        label.textAlignment = NSTextAlignment.Center
-        label.textColor = UIColor.greenColor()
-        label.font = UIFont.boldSystemFontOfSize(16)
-        label.text = "+\(count.currentCountTrack())"
-        self.view.addSubview(label)
+            label = UILabel(frame: CGRectMake(self.countLabel.frame.width/1.5, self.countLabel.frame.height, 100, 100))
+            label.textAlignment = NSTextAlignment.Center
+            label.textColor = UIColor.greenColor()
+            label.font = UIFont.boldSystemFontOfSize(16)
+            label.text = "+\(count.currentCountTrack())"
+            self.view.addSubview(label)
         
         UIView.animateWithDuration(0.6) { () -> Void in
             self.label.alpha = 0
